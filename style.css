@@ -1,0 +1,233 @@
+body{
+
+    padding: 0;
+    background-color:#111;
+}
+
+/* navbar */
+
+#nav{
+    height: 100px;
+    width: 100%;
+    color: white;
+    margin-top: 0;
+}
+.logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.logo span{
+    color: #13F7D2;
+    transition: all 0.3s ease;
+}
+.text-box h2 span{
+    color: #13F7D2;
+    font-weight: 500;
+}
+#content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navtext{
+    padding: 40px;
+    margin-right: 7%;
+    font-size: 1.4em;
+    color: #13F7D2; 
+    border-radius: 20px;
+}
+
+.text-box{
+    width: 45%;
+    float: left;
+    color: white;
+    padding: 10px;
+    padding-top: 4rem;
+}
+.box{
+    width: 45%;
+}
+.body{
+    display:flex;
+}
+#name{
+    font-size: 3rem;
+    color: #13F7D2;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 8ch;
+}
+@keyframes typing{
+
+    0%
+    {
+        width: 0ch;
+        border-right: 1px solid white;
+    }
+    100%{
+        width: 8ch;
+        border-right: 0px solid white;
+    }
+}
+   
+.gh{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 80px;
+    width: 80px;
+}
+#logo1{
+    height: 50px;
+    width: 50px;
+}
+#logo2{
+    position: relative;
+    top:-2.8rem;
+    left: .5rem;
+}
+#profileimg{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 4rem;
+    left: 14vw;
+    border-radius: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0);
+}
+#circle{
+    background-color: #13F7D2;
+    opacity: .5;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -2rem;
+    left: 11vw;
+    border-radius: 50px;
+}
+
+#x1{
+    left: 4.5rem;
+    height: 20px;
+    position: relative;
+    top: 5.5rem;
+}
+#x2{
+    height: 20px;
+    position: relative;
+    left: 10vw;
+    top: -10.5rem;
+}
+
+/* footer */
+footer{
+        background-color: rgba(0, 0, 0, 0);
+        height: 100px;
+        position: relative;
+        bottom: -4rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+i {
+    border: 1px solid #13F7D2;
+}
+i:hover{
+    box-shadow: 0px 0px 15px #13F7D2;
+}
+.fa{
+    padding: 10px;
+    margin: 20px;
+    color: #13F7D2;
+    border-radius: 25px;
+    height: 16px;
+    width: 16px;
+    
+}
+
+p{
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 0;
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: #111;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #profileimg{
+        margin-left: -6rem;
+    }
+    #circle{
+        margin-left: -7rem;
+        margin-top: 0rem;
+    }
+    #x1{
+
+        margin-left: -6rem;
+    }
+    #x2{
+        margin-left: 4rem;
+        top: -10rem;
+    }
+  }
+
+  .menu{
+    top: 2.5rem;
+    right: 10vw;
+    height: 1.5rem;
+    position: absolute;
+    display: none;
+  }
+
+  @media screen and (max-width: 380px) {
+    #name{
+        font-size: 1.7rem;
+    }
+    #x2{
+        position: relative;
+        top: -12rem;
+        left: 6rem;}
+
+  }
+
+  @media screen and (max-width: 500px){
+      #name{
+          font-size: 1.9rem;
+      }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navtext{
+        padding: 10px;
+        display: none;
+        border: 1px solid #111;
+        background-color: rgb(32 36 39);
+        opacity: .7;
+    }
+    #nav1:hover, #nav2:hover, #nav3:hover{
+        border: 1px solid #111;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    #content{
+        flex-direction: column-reverse;
+        margin-top: 7rem;
+    }
+
+  }
